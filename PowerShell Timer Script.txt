@@ -1,0 +1,15 @@
+Clear-Host
+Echo "Toggle Keys"
+
+$Wshell = new-object -com "WScript.Shell"
+$Sleep = 60
+
+while ($true)
+{
+    $Wshell.sendkeys("{SCROLLLOCK}")
+    Start-Sleep -Milliseconds 100
+    Write-Host "ScrollLock Pressed"
+    $Wshell.sendkeys("{SCROLLLOCK}")
+    Write-Host "Waiting " $Sleep " Seconds..."
+    Start-Sleep -Seconds $Sleep
+}
