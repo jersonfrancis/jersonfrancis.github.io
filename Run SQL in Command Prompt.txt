@@ -1,0 +1,5 @@
+In Command Prompt:
+
+cd (insert_path)
+sqlplus username/password@hostname:port#/database
+@file_name.sql
