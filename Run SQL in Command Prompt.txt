@@ -1,4 +1,4 @@
-In Command Prompt:
+#Run in Command Prompt:
 
 cd (insert_path)
 sqlplus username/password@hostname:port#/database
