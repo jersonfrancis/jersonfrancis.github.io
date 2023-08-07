@@ -1,0 +1,3 @@
+SELECT owner, segment_name obj_name, segment_type obj_type, 
+round(sum(bytes)/power(1024, 3), 2) gb, round(sum(bytes)/power(1024, 2), 2) mb
+FROM dba_segments WHERE owner = 'table_name' GROUP BY owner, segment_name, segment_type ORDER BY 5 DESC;
